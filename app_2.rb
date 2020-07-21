@@ -27,11 +27,11 @@ def menu(player1, player2, player3)
   puts "C'est votre tour #{player1.name}. Que voulez-vous faire ?"
   puts "a - chercher une meilleure arme"
   puts "s - chercher à se soigner"
-  if player2.life_points > 0
-    puts "1 - Attaquer #{player2.name} (#{player2.life_points} pv)"
+  if player2.life_points > 1
+    puts "1 - pour attaquer Hector the bull qui à #{player2.life_points} points de vie"
   end
-  if player3.life_points > 0
-    puts "2 - Attaquer #{player3.name} (#{player3.life_points} pv)"
+  if player3.life_points > 1
+    puts "2 - pour attaquer Dolly the cow qui à #{player3.life_points} points de vie"
   end
   print "> "
  choice = gets.chomp
