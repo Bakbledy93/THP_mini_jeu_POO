@@ -1,13 +1,14 @@
 require 'bundler'
 Bundler.require
 
-require_relative 'lib/game'
+#require_relative 'lib/game'
 require_relative 'lib/player'
 
+#Initialise les joueurs
   player1 = Player.new("Hwarang")
   player2 = Player.new("Yoshimitsu")
 
-
+#Présente les protagonistes
   puts "À ma droite Hwarang"
   puts "Hwarang 23 ans, célibataire, libre comme l'air"
   puts "-------------------------------------------------"
@@ -23,6 +24,7 @@ require_relative 'lib/player'
   puts player2.show_state
 
 
+#Boucle pour orchestrer le combat
 while player1.life_points > 0 && player2.life_points > 0 do
   player1.attacks(player2)
  
